@@ -4,6 +4,7 @@
 1. MLOPS Team 71 DockerHub
 2. GitHub Account
 3. GitCLI
+4. DockerHub
 
 
 #Create a new environment
