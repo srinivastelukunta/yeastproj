@@ -56,4 +56,3 @@ def test_model_accuracy(load_model_and_data):
     # Use numpy to calculate the mean of the predictions
     prediction_mean = np.mean(y_pred)
     assert prediction_mean >= 0, "Mean of predictions is negative"
-
