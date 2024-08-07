@@ -1,7 +1,7 @@
-pandas
+pandas=2.2.2
 flake8
 pytest
-numpy
+numpy==2.0.1
 matplotlib
 seaborn
 scikit-learn
