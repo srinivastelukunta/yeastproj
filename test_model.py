@@ -28,14 +28,16 @@ def load_model_and_data():
 def test_model_shape(load_model_and_data):
     model, scaler, features, target = load_model_and_data
     # Test if the model has the correct shape
-    assert features.shape[1] == model.coef_.shape[1], "Feature shape mismatch"
+    assert features.shape[1] == model.coef_.shape[1], \
+        "Feature shape mismatch"
 
 
 def test_scaler(load_model_and_data):
     model, scaler, features, target = load_model_and_data
     # Test if the scaler transforms the data correctly
     scaled_features = scaler.transform(features)
-    assert scaled_features.shape == features.shape, "Scaler output shape mismatch"
+    assert scaled_features.shape == features.shape, \
+        "Scaler output shape mismatch"
 
 
 def test_model_accuracy(load_model_and_data):
