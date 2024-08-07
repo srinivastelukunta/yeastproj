@@ -52,3 +52,8 @@ def test_model_accuracy(load_model_and_data):
     y_pred = model.predict(X_test)
     accuracy = accuracy_score(y_test, y_pred)
     assert accuracy > 0.5, "Model accuracy is too low"
+    
+    # Use numpy to calculate the mean of the predictions
+    prediction_mean = np.mean(y_pred)
+    assert prediction_mean >= 0, "Mean of predictions is negative"
+
