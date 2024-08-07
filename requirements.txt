@@ -1,4 +1,4 @@
-pandas==2.2.2
+pandas
 flake8
 pytest
 numpy==2.0.1
