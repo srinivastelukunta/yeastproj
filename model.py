@@ -1,10 +1,10 @@
 import pandas as pd
+import numpy as np
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix
-from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import pickle
 from pickle import dump
 
@@ -57,6 +57,10 @@ def train_and_evaluate_model(features, target):
     print(conf_matrix)
     print("Classification Report:")
     print(class_report)
+
+    # Example usage of numpy to ensure numpy is included
+    example_numpy_array = np.array(y_pred)
+    print(f"Example NumPy array: {example_numpy_array}")
 
     return model, scaler
 
