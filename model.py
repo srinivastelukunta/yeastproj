@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
@@ -58,11 +57,6 @@ def train_and_evaluate_model(features, target):
     print(conf_matrix)
     print("Classification Report:")
     print(class_report)
-
-    # Example usage of numpy to ensure numpy is included
-    example_numpy_array = np.array(y_pred)
-    print(f"Example NumPy array: {example_numpy_array}")
-
     return model, scaler
 
 

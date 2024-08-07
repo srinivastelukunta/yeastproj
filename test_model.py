@@ -1,6 +1,5 @@
 import pytest
 import pandas as pd
-import numpy as np
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
@@ -53,6 +52,6 @@ def test_model_accuracy(load_model_and_data):
     accuracy = accuracy_score(y_test, y_pred)
     assert accuracy > 0.5, "Model accuracy is too low"
 
-    # Use numpy to calculate the mean of the predictions
-    prediction_mean = np.mean(y_pred)
+    # Calculate the mean of the predictions without using numpy
+    prediction_mean = sum(y_pred) / len(y_pred)
     assert prediction_mean >= 0, "Mean of predictions is negative"

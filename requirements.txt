@@ -1,7 +1,6 @@
 pandas
 flake8
 pytest
-numpy==2.0.1
 matplotlib
 seaborn
 scikit-learn
